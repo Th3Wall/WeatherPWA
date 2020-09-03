@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { fetchWeather } from './api/fetchWeather.js';
+import SearchIcon from '@material-ui/icons/Search';
 import './App.css';
 
 
@@ -22,8 +23,10 @@ const App = () => {
 
       <h1>Weather PWA</h1>
       <h5>Courtesy of OpenWeather API</h5>
-
-      <input type="text" className="search" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
+      <div className="search-wrp">
+        <SearchIcon />
+        <input type="text" className="search" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
+      </div>
       {weather.main && (
           <div className="city">
               <h2 className="city-name">

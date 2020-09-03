@@ -19,20 +19,31 @@ html, body, #root {
     background-size: cover;
 }
 
-.search {
-    outline: none;
+.search-wrp {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    background: rgba(250, 250, 250, 0.85);
+    border-radius: 12px;
+    padding: 0 20px;
     width: calc(100% - 40px);
     max-width: 360px;
     height: 50px;
     line-height: 50px;
-    border-radius: 12px;
-    border: none;
-    padding: 0 20px;
-    margin-bottom: 50px;
-    background: rgba(250, 250, 250, 0.85);
+}
+
+.search-wrp > .MuiSvgIcon-root {
+    fill: #72539e;
+}
+
+.search {
+    margin-left: 10px;
     font-family: inherit;
     font-size: 18px;
     font-weight: 800;
+    background-color: transparent;
+    border: none;
+    outline-width: 0;
 }
 
 .city {
