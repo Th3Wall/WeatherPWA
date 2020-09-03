@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html, body, #root {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    background: #0a1f44;
+    color: #FFFFFF;
+    height: 100%;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient( #72539e, #8673AD );
+    background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+    outline: none;
+    width: calc(100% - 40px);
+    max-width: 360px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 12px;
+    border: none;
+    padding: 0 20px;
+    margin-bottom: 50px;
+    background: rgba(250, 250, 250, 0.85);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 12px;
+    width: calc(100% - 40px);
+    max-width: 400px;
+    background: linear-gradient( #5B58A3, #5EBBEB );
+    box-shadow: 9px 13px 11px 4px rgba(15, 15, 15, 0.404)
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h5 {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.city sup {
+    font-size: 0.5em;
+}
+
+.city-name {
+    font-size: 2em;
+}
+
+.city-icon {
+    width: 130px;
+    height: 130px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
