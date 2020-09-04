@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap')
+
+html, body, #root
+    font-family: 'Quicksand', sans-serif
+    font-size: 1rem
+    background: #0a1f44
+    color: #FFFFFF
+    height: 100%
+    margin: 0
+
+h1
+    font-size: 3.2em
+    margin-bottom: 5px
+
+h5
+    font-size: 1.2em
+    font-weight: 400
+    margin-top: 0
+    margin-bottom: 40px
+
+p
+    margin-top: 10px
+    text-transform: uppercase
+    letter-spacing: 0.05em
+
+.main-container
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: linear-gradient( #72539e, #8673AD )
+    background-size: cover
+
+.search
+    margin-left: 10px
+    font-family: inherit
+    font-size: 18px
+    font-weight: 800
+    background-color: transparent
+    border: none
+    outline-width: 0
+    width: 100%
+
+    &-wrp
+        display: flex
+        align-items: center
+        margin-bottom: 50px
+        background: rgba(250, 250, 250, 0.85)
+        border-radius: 12px
+        padding: 0 0 0 20px
+        width: calc(100% - 60px)
+        max-width: 360px
+        height: 50px
+        line-height: 50px
+
+        .MuiSvgIcon-root
+            fill: #72539e
+            width: 1.2em
+            height: 1.2em
+
+.city
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    padding-top: 20px
+    padding-bottom: 40px
+    border-radius: 12px
+    width: calc(100% - 40px)
+    max-width: 400px
+    background: linear-gradient( #5B58A3, #5EBBEB )
+    box-shadow: 9px 13px 11px 4px rgba(15, 15, 15, 0.404)
+
+    sup
+        font-size: 0.5em
+
+    &-name
+        font-size: 2em
+        
+        &-sup
+            font-size: 0.5em
+            background-color: goldenrod
+            padding: 2px 8px
+            border-radius: 12px
+            margin-left: 5px
+
+    &-icon
+        width: 130px
+        height: 130px
+    
+    &-temp
+        font-size: 5rem
+        font-weight: bold
+        margin-top: 10px
+        color: #FFFFFF
+        text-align: center
+
+    &-minmax
+        display: flex
+        width: 100%
+        justify-content: space-evenly
+
+        .min,
+        .max
+            display: flex
+            align-items: center
+            flex-direction: column
+
+            .MuiSvgIcon-root
+                width: 0.8em
+                height: 0.8em
+
+            smaller
+                margin-left: 5px
+
+        &-icon
+            display: flex
+            align-items: center
+            
+        &-label
+            p
+                font-size: 14px
+                text-transform: lowercase
+                margin-top: 5px
+
+.info
+    display: flex
+    flex-direction: column
+    align-items: center
+
+@media screen and (max-width: 768px)
+    h1
+        font-size: 2.2em
+
+    h5
+        font-size: 0.9em
